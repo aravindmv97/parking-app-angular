@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div>
+
+  <h3>Available parking space</h3>
+  <input type="text" name="slot_number">
+  <nav>
+    <ul>
+      <li><a [routerLink]="['/bike']">Car : {{car_count}}</a></li>
+      <li><a [routerLink]="['/car']">Bike : {{bike_count}}</a></li>
+    </ul>
+  </nav>
+
+ 
+
+  <app-bike [slots]="slots" [slot_number]="slot_number"></app-bike>
+  <app-car [car_count]="car_count"></app-car>
+
+
+ </div>
